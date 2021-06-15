@@ -1,0 +1,38 @@
+.signup {
+    padding-top:90px;
+    padding-bottom: 108px;
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #151515;
+    margin-bottom: 50px;
+}
+
+.form-input {
+    border-radius: 50px;
+    background: #F5F5F5;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+::-webkit-input-placeholder {
+    text-transform: uppercase;
+    color: #909090;
+    font-size: 16px;
+}
+
+.btn-sections {
+    margin-top: 20px;
+}
+
+.notice {
+    margin-top:18px;
+    font-size: 12px;
+    color: #6E6E6E;
+}
