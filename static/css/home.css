@@ -1,0 +1,33 @@
+.homepage {
+    padding-top: 160px;
+    padding-bottom: 122px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.solo {
+    margin-bottom: 160px;
+}
+
+.solo h2 {
+    font-size: 28px;
+    color: #151515;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 42px;
+}
+
+.btn-sections .btn-main  {
+    margin-right: 14px;
+}
+
+.tip {
+    margin-bottom: 40px;
+}
+
+.tip p {
+    margin: 0;
+    padding: 0;
+}
