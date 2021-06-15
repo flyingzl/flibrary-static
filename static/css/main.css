@@ -80,6 +80,28 @@ footer .links a {
     padding: 0;
 }
 
+
+/** form-input **/
+
+.form-input::-webkit-input-placeholder {
+    text-transform: uppercase;
+    color: #909090;
+    font-size: 16px;
+}
+
+.form-input {
+    border-radius: 50px;
+    background: #F5F5F5;
+}
+
+
+/** icons **/
 .icon-right {
     background: #2680eb url('../images/icon-right.png') right 10px center no-repeat;
+}
+
+
+/** margin-bottom **/
+.mb-24 {
+    margin-bottom: 24px;
 }

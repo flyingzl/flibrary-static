@@ -15,7 +15,7 @@
     <link href="/static/css/main.css" rel="stylesheet">
 
     <!-- 功能页面样式-->
-    <link href="/static/css/signup.css" rel="stylesheet">
+    <link href="/static/css/signin.css" rel="stylesheet">
 
 </head>
 
@@ -41,19 +41,18 @@
         </header>
 
         <main id="main" class="container">
-            <div class="signup">
+            <div class="signin">
+                <div class="logo text-center">
+                    <span class="circle-logo">F</span>
+                </div>
+
                 <h2 class="title text-center">
-                    Please enter information
+                    Sign in to Flibrary                
                 </h2>
-                <form action="create_user" method="post">
+
+                <form action="validate" method="post">
                     <div class="mb-24">
                         <input type="email" class="form-control form-input" name="email" placeholder="email">
-                    </div>
-                    <div class="mb-24">
-                        <input type="text" class="form-control form-input" name="school" placeholder="school">
-                    </div>
-                    <div class="mb-24">
-                        <input type="text" class="form-control form-input" name="phone" placeholder="phone number">
                     </div>
                     <div class="mb-24">
                         <input type="password" class="form-control form-input" name="password" placeholder="Password">
@@ -64,14 +63,12 @@
                     </div>
     
                     <div class="btn-sections text-center">
-                        <button type="submit" class="btn btn-main icon-right">Create account</button>
+                        <button type="submit" class="btn btn-main icon-right">Sign In</button>
                         <div class="notice">
-                            <span class="d-block">By creating an account,</span>
-                            <span class="d-block">you agree to Flibrary’s Conditions of Use and Privacy Notice.</span>
+                            <span class="d-block">New to Flibrary? <a class="text-decoration-underline" href='/user/signup'>sign up</a></span>
                         </div>
                     </div>
                 </form>
-
             </div>
         </main>
 

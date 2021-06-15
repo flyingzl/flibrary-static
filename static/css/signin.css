@@ -1,0 +1,40 @@
+.signin {
+    padding-top: 120px;
+    padding-bottom: 90px;
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-bottom: 54px;
+}
+
+.circle-logo {
+    display: inline-block;
+    width: 108px;
+    height: 108px;
+    background: #2680eb;
+    box-shadow: 2px 2px 15px rgba(38, 128, 235, 0.5);
+    border-radius: 50%;
+    font-size: 78px;
+    line-height: 108px;
+    color: #fff;
+    text-align: center;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #151515;
+    margin-bottom: 50px;
+}
+
+.notice {
+    margin-top:18px;
+    font-size: 12px;
+    color: #6E6E6E;
+}
+
+.notice a {
+    color: #6E6E6E;
+}

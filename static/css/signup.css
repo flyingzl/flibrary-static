@@ -12,20 +12,6 @@
     margin-bottom: 50px;
 }
 
-.form-input {
-    border-radius: 50px;
-    background: #F5F5F5;
-}
-
-.mb-24 {
-    margin-bottom: 24px;
-}
-
-::-webkit-input-placeholder {
-    text-transform: uppercase;
-    color: #909090;
-    font-size: 16px;
-}
 
 .btn-sections {
     margin-top: 20px;
