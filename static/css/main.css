@@ -63,7 +63,19 @@ body {
     line-height: 31px;
 }
 
-.btn-main:hover {
+.btn-main-sm {
+    border: 1px solid #2a2a2a;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.16);
+    font-size: 14px;
+    border-radius: 50px;
+    padding: 0 16px;
+    height: 31px;
+    line-height: 31px;
+    background-color: #2680eb;
+    color: #fff;
+}
+
+.btn-main:hover, .btn-main-sm:hover {
     color: #fff;
     background-color: #0d72ea;
 }
@@ -147,7 +159,6 @@ footer .links a {
     position: relative;
     padding-left: 24px;
     padding-right: 12px;
-    display: inline-block;
     height: 31px;
     background: transparent url('../images/icon-search.png') 10px center
         no-repeat;

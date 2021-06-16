@@ -44,14 +44,27 @@
             <div class="all_books">
                 <h2 class="title">Books</h2>
                 <div class="clearfix">
-                    <a class="btn btn-normal-sm" href='/market/all_books'>All</a>
-                    <div class="search-input float-end">
+                    <a class="btn m-3" :class="AllBtnClass" href='/market/all_books'>All</a>
+
+                    <!-- catgories list-->
+                    <div class="dropdown d-inline-block" v-if='categories.length'>
+                        <button class="btn dropdown-toggle" :class="CategoryBtnClass" type="button" data-bs-toggle="dropdown">
+                            ${currentCategoryName ||categories[0].name }
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li v-for="category in categories" :key="category.id">
+                                <a class="dropdown-item" :href="`/market/all_books?category=${category.id}`">${category.name}</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="search-input inline-block float-md-end">
                         <input placeholder="search" v-model="filterName" />
                     </div>
                 </div>
 
                 <div class="books" v-show="books.length > 0">
-                    <div class="row row-cols-2 row-cols-md-4" >
+                    <div class="row row-cols-2 row-cols-md-4">
                         <div class="col gy-3" v-for="book in books" :key="book.id">
                             <div class="card">
                                 <div :style="{backgroundImage:`url(${book.image})`}" class="card-img"></div>
@@ -145,6 +158,13 @@
                 price: 5
             },
 
+        ]
+
+        // current category list
+        window.categories = [
+            { id: '3201aaac-7584-43cb-a5cd-80ec1d26de1d', name: 'Economics' },
+            { id: '9a4b9f71-ce1b-4d63-a5d3-212685038f42', name: 'Mathematics' },
+            { id: 'ee8be465-45ca-4897-a802-b89c1d0e926e', name: 'Physics' }
         ]
     </script>
 
