@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -13,10 +14,9 @@ html, body {
 }
 
 #footer {
-    background: #F5F5F5;
+    background: #f5f5f5;
     padding: 32px;
 }
-
 
 .navbar-main {
     background: #fbfbfb;
@@ -53,15 +53,24 @@ html, body {
     color: #151515;
 }
 
+.btn-normal-sm {
+    border: 1px solid #2a2a2a;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.16);
+    font-size: 14px;
+    border-radius: 50px;
+    padding: 0 16px;
+    height: 31px;
+    line-height: 31px;
+}
+
 .btn-main:hover {
     color: #fff;
     background-color: #0d72ea;
 }
 
-
 footer .links a {
     display: block;
-    color: #2A2A2A;
+    color: #2a2a2a;
     text-decoration: none;
 }
 
@@ -75,11 +84,10 @@ footer .links a {
 }
 
 .copyright {
-    color: #6E6E6E;
+    color: #6e6e6e;
     margin: 0;
     padding: 0;
 }
-
 
 /** form-input **/
 
@@ -91,17 +99,68 @@ footer .links a {
 
 .form-input {
     border-radius: 50px;
-    background: #F5F5F5;
+    background: #f5f5f5;
 }
-
 
 /** icons **/
 .icon-right {
-    background: #2680eb url('../images/icon-right.png') right 10px center no-repeat;
+    background: #2680eb url('../images/icon-right.png') right 10px center
+        no-repeat;
+    background-size: 14px 14px;
 }
 
+.prev-anchor {
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #2580ea url('../images/icon-right.png') center no-repeat;
+    background-size: 18px 18px;
+    transform: scale(-1, 1);
+    box-shadow: 1px 2px 5px rgba(37, 128, 234, 0.16);
+}
+
+.next-anchor {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #2A2A2A;
+    display: inline-block;
+    border-radius: 50%;
+    background: transparent url('../images/icon-right-black.png') center no-repeat;
+    background-size: 18px 18px;
+    box-shadow: 1px 2px 5px rgba(37, 128, 234, 0.16);
+}
 
 /** margin-bottom **/
 .mb-24 {
     margin-bottom: 24px;
+}
+
+
+/** search-input **/
+
+.search-input {
+    width: 206px;
+    border: 1px solid #2580eb;
+    box-shadow: 1px 2px 5px rgba(38, 128, 235, 0.16);
+    border-radius: 50px;
+    position: relative;
+    padding-left: 24px;
+    padding-right: 12px;
+    display: inline-block;
+    height: 31px;
+    background: transparent url('../images/icon-search.png') 10px center
+        no-repeat;
+}
+
+.search-input input {
+    border: 0;
+    height: 28px;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+}
+
+.search-input input:focus {
+    outline: none;
 }
