@@ -44,7 +44,7 @@
             <div class="all_books">
                 <h2 class="title">Books</h2>
                 <div class="clearfix">
-                    <a class="btn m-3" :class="AllBtnClass" href='/market/all_books'>All</a>
+                    <a class="btn me-3" :class="AllBtnClass" href='/market/all_books'>All</a>
 
                     <!-- catgories list-->
                     <div class="dropdown d-inline-block" v-if='categories.length'>
@@ -58,7 +58,7 @@
                         </ul>
                     </div>
 
-                    <div class="search-input inline-block float-md-end">
+                    <div class="search-input d-inline-block float-md-end ms-3 ms-md-0">
                         <input placeholder="search" v-model="filterName" />
                     </div>
                 </div>
