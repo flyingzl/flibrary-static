@@ -41,15 +41,21 @@ body {
     border-radius: 50px;
     color: #fff !important;
     font-size: 14px;
-    padding: 8px 30px !important;
+    padding: 8px 30px;
     display: inline-block;
     white-space: pre-wrap;
+}
+
+.btn-main.icon-right {
+    padding-left: 20px !important;
+    padding-right: 30px !important;
 }
 
 .btn-normal {
     border: 1px solid #151515;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.16);
     border-radius: 50px;
+    font-size: 14px;
     color: #151515;
 }
 
@@ -75,7 +81,8 @@ body {
     color: #fff;
 }
 
-.btn-main:hover, .btn-main-sm:hover {
+.btn-main:hover,
+.btn-main-sm:hover {
     color: #fff;
     background-color: #0d72ea;
 }
@@ -135,10 +142,11 @@ footer .links a {
 .next-anchor {
     width: 38px;
     height: 38px;
-    border: 1px solid #2A2A2A;
+    border: 1px solid #2a2a2a;
     display: inline-block;
     border-radius: 50%;
-    background: transparent url('../images/icon-right-black.png') center no-repeat;
+    background: transparent url('../images/icon-right-black.png') center
+        no-repeat;
     background-size: 18px 18px;
     box-shadow: 1px 2px 5px rgba(37, 128, 234, 0.16);
 }
@@ -147,7 +155,6 @@ footer .links a {
 .mb-24 {
     margin-bottom: 24px;
 }
-
 
 /** search-input **/
 
@@ -174,4 +181,11 @@ footer .links a {
 
 .search-input input:focus {
     outline: none;
+}
+
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
 }
