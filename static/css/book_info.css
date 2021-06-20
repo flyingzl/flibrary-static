@@ -1,5 +1,9 @@
+.book-info {
+    margin-top: 98px;
+    margin-bottom: 162px;
+}
+
 .book-field {
-    margin-top: 70px;
     padding: 28px 44px;
     max-width: 794px;
     background: #ffffff;
@@ -11,7 +15,6 @@
 .book-field-title {
     color: #2680eb;
     font-size: 25px;
-    margin-bottom: 20px;
 }
 
 .form-control-plaintext {
