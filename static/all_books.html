@@ -23,19 +23,28 @@
 
     <div id="page-container">
         <header id="content-wrap">
-            <nav class="navbar sticky-top navbar-expand-md navbar-main">
+            <nav class="navbar navbar-light sticky-top navbar-expand-md navbar-main">
                 <div class="container">
-                    <a class="navbar-brand" href="/">FLibrary</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarItems">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarItems">
+
+                    <svg style="fill:#007FF3;width:24px;height:24px" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg" class="nav-icon">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                    </svg>
+
+                    <a class="navbar-brand flex-fill text-center text-md-start" href="/">FLibrary</a>
+                    <div class="navbar-collapse offcanvas-collapse" id="navbarItems">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="/market">Market</a></li>
-                            <li class="nav-item"><a class="nav-link btn btn-main" href="/user/signin">Sign In</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/market">Sign up</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="/market">Post book</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/market">Messaging</a></li>
                         </ul>
                     </div>
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link btn btn-main" href="/user/signin">Sign In</a></li>
+                    </ul>
+
                 </div>
             </nav>
         </header>
@@ -58,7 +67,7 @@
                         </ul>
                     </div>
 
-                    <div class="search-input d-inline-block float-md-end ms-3 ms-md-0">
+                    <div class="search-input d-inline-block float-md-end mt-3 mt-md-0">
                         <input placeholder="search" v-model="filterName" />
                     </div>
                 </div>
@@ -116,6 +125,7 @@
     <script src="/static/js/popper.min.js"></script>
     <script src="/static/js/bootstrap.bundle.min.js"></script>
     <script src="/static/js/vue.min.js"></script>
+    <script src="/static/js/main.js"></script>
 
 
     <script>

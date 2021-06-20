@@ -23,16 +23,57 @@ body {
     height: 78px;
 }
 .navbar-main .navbar-brand {
-    font-size: 30px;
+    font-size: 20px;
     color: #007ff3;
 }
 
-.navbar-main .nav-item:not(:last-child) {
-    margin-right: 34px;
-}
 
 .navbar-main .nav-item .nav-link {
     color: #151515;
+}
+
+.navbar-nav .btn.nav-link {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.offcanvas-collapse .nav-link {
+    height: 42px;
+    font-size: 15px;
+    color: #2a2a2a;
+    padding-left: 40px;
+}
+
+.nav-item.active {
+    background-color: #007FF3;
+}
+
+.nav-item.active .nav-link  {
+    color: #fff;
+}
+
+.nav-item.active .nav-link:hover  {
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    .offcanvas-collapse {
+        padding-top: 40px;
+        position: fixed;
+        top: 78px; /* Height of navbar */
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: #fff;
+        transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+    .offcanvas-collapse.open {
+        visibility: visible;
+        transform: translateX(100%);
+    }
 }
 
 .btn-main {
@@ -96,10 +137,6 @@ footer .links a {
 .row-wrapper {
     display: flex;
     justify-content: flex-end;
-}
-
-.row-wrapper .links .col:not(:last-child) {
-    margin-right: 164px;
 }
 
 .copyright {
@@ -184,12 +221,35 @@ footer .links a {
 }
 
 @media (min-width: 768px) {
+    .nav-icon {
+        display: none;
+    }
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 30px;
         padding-left: 30px;
     }
-}
 
+    .navbar-main .navbar-brand {
+        font-size: 30px;
+    }
+    
+    .nav-item.active {
+        background-color:transparent;
+    }
+    
+    .nav-item.active .nav-link  {
+        color:#151515;
+    }
+
+    .nav-item.active .nav-link:hover  {
+        color:currentColor;
+    }
+
+    .row-wrapper .links .col:not(:last-child) {
+        margin-right: 164px;
+    }
+
+}
 
 .caret-wrapper {
     display: inline-flex;
