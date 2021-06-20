@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="An online second-hand book market">
+    <meta name="author" content="Harry Ying">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage | FLibrary</title>
+
+    <!-- Bootstrap core css -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-table.min.css" rel="stylesheet">
+    <link href="/static/css/main.css" rel="stylesheet">
+
+    <!-- 功能页面样式-->
+    <link href="/static/css/post_book.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="page-container">
+        <header id="content-wrap">
+            <nav class="navbar sticky-top navbar-expand-md navbar-main">
+                <div class="container">
+                    <a class="navbar-brand" href="/">FLibrary</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarItems">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarItems">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="/market">Market</a></li>
+                            <li class="nav-item"><a class="nav-link btn btn-main" href="/user/signin">Sign In</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main id="main" class="container">
+            <div class="post_book">
+                <h2 class="title">Post a book</h2>
+                <h3 class="title-summary">Fill in relevant information to post a book for sale. If you want to add
+                    pictures, upload them elsewhere and paste link in the description below.</h3>
+
+                <div class="book-field">
+                    <p class="book-field-title">Book info</p>
+                    <form action="cow_book" method="post">
+                        <div class="mb-3 row">
+                            <label for="inputBook" class="col-sm-2 col-form-label">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputBook" placeholder="Book name"
+                                    name="prodname">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3 row">
+                            <label for="inputCategory" class="col-sm-2 col-form-label">Category</label>
+                            <div class="col-sm-4">
+                                <select class="form-select" name="category" id="inputCategory">
+                                    <option value="id1">Physics</option>
+                                    <option value="id2">Economy</option>
+                                    <option value="id3">Math</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <label for="price" class="col-sm-2 col-form-label">Price</label>
+                            <div class="col-sm-4">
+                                <input type="number" min="0" class="form-control" placeholder="Price" name="price"
+                                    id="price">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <label for="description" class="col-sm-2 col-form-label">Description</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="15" name="description" id="description"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row mt-5">
+                            <div class="col-sm-12 text-end">
+                                <button class="btn btn-main icon-right">Post  the book!</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <div class="row-wrapper">
+                <div class="row links gutter">
+                    <div class="col">
+                        <a href='/' class="text-decoration-underline">Document</a>
+                        <a href='/'>User manual</a>
+                    </div>
+                    <div class="col">
+                        <a href='/' class="text-decoration-underline">Flibrary</a>
+                        <a href='/'>Market</a>
+                        <a href='/'>User Portal</a>
+                    </div>
+                    <div class="col">
+                        <a href='/' class="text-decoration-underline">Quickstart</a>
+                        <a href='/'>Sign up</a>
+                        <a href='/'>Post book</a>
+                        <a href='/'>Messaging</a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">Copyright &copy;2021,Flibrary Team</p>
+        </footer>
+    </div>
+
+
+
+
+    <!-- CORE JavaScript -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js//bootstrap-table.min.js"></script>
+    <script src="/static/js/vue.min.js"></script>
+
+
+</body>
+
+</html>

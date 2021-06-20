@@ -1,0 +1,43 @@
+.post_book {
+    padding-top: 98px;
+    padding-bottom: 162px;
+}
+
+.title {
+    font-size: 28px;
+    margin-bottom: 24px;
+    color: #151515;
+}
+
+.title-summary {
+    font-size: 15px;
+    color: #2a2a2a;
+    font-weight: normal;
+}
+
+.book-field {
+    margin-top: 70px;
+    padding: 28px 44px;
+    max-width: 794px;
+    background: #ffffff;
+    box-shadow: 1px 1px 70px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    border-radius: 15px;
+}
+
+
+.book-field-title {
+    color: #2680EB;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+
+.form-control,.form-select {
+    border: 1px solid #2A2A2A;
+    border-radius: 50px;
+}
+
+textarea.form-control {
+    border-radius: 20px;
+}
