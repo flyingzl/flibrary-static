@@ -1,0 +1,32 @@
+.book-field {
+    margin-top: 70px;
+    padding: 28px 44px;
+    max-width: 794px;
+    background: #ffffff;
+    box-shadow: 1px 1px 70px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    border-radius: 15px;
+}
+
+.book-field-title {
+    color: #2680eb;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.form-control-plaintext {
+    color: #2680eb;
+    font-size: 14px;
+}
+
+p.desc {
+    color: #6e6e6e;
+}
+
+.btn-danger {
+   border-radius: 50px;
+   font-size: 14px;
+   padding-left: 10px;
+   padding-right: 10px;
+   display: inline-block;
+}
