@@ -27,7 +27,6 @@ body {
     color: #007ff3;
 }
 
-
 .navbar-main .nav-item .nav-link {
     color: #151515;
 }
@@ -45,17 +44,16 @@ body {
 }
 
 .nav-item.active {
-    background-color: #007FF3;
+    background-color: #007ff3;
 }
 
-.nav-item.active .nav-link  {
+.nav-item.active .nav-link {
     color: #fff;
 }
 
-.nav-item.active .nav-link:hover  {
+.nav-item.active .nav-link:hover {
     color: #fff;
 }
-
 
 @media (max-width: 768px) {
     .offcanvas-collapse {
@@ -232,23 +230,22 @@ footer .links a {
     .navbar-main .navbar-brand {
         font-size: 30px;
     }
-    
+
     .nav-item.active {
-        background-color:transparent;
-    }
-    
-    .nav-item.active .nav-link  {
-        color:#151515;
+        background-color: transparent;
     }
 
-    .nav-item.active .nav-link:hover  {
-        color:currentColor;
+    .nav-item.active .nav-link {
+        color: #151515;
+    }
+
+    .nav-item.active .nav-link:hover {
+        color: currentColor;
     }
 
     .row-wrapper .links .col:not(:last-child) {
         margin-right: 164px;
     }
-
 }
 
 .caret-wrapper {
@@ -287,4 +284,43 @@ footer .links a {
 .sort-caret.ascending {
     border-bottom-color: #c0c4cc;
     top: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+    img {
+        filter: invert(1) hue-rotate(180deg);
+    }
+
+    html, body {
+        background-color: #2C2C2C;
+    }
+
+    .navbar-main {
+        background-color: #2C2C2C;
+        color: #fff;
+    }
+
+    .nav-link {
+        color: #fff !important; 
+    }
+
+    #main, #footer, h2,h3,div, span, p,a, input, textarea, td {
+        color: #fff !important;
+    }
+
+    input {
+        background-color: transparent !important;
+    }
+
+    #footer {
+        background-color: #535353;
+    }
+
+    .alert-warning {
+        background-color: transparent;
+    }
+
+    .card {
+        background-color: #3C3C3C;
+    }
 }

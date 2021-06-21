@@ -25,6 +25,18 @@
     border-radius: 15px;
 }
 
+@media (prefers-color-scheme: dark) {
+    .book-field {
+        background-color: #3C3C3c;
+    }
+
+    input, textarea, select {
+        border-color: #E4E4E4 !important;
+        background-color: #3C3C3C !important;
+        color: #fff !important;
+    }
+}
+
 
 .book-field-title {
     color: #2680EB;
